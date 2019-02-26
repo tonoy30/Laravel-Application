@@ -1,5 +1,5 @@
 @extends('master')
-@section('name', 'Home - Tonoy')
+@section('title', 'Blog - Tonoy')
     
 @section('content')
     <h1>Blog</h1>

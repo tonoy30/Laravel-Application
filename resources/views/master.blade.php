@@ -7,12 +7,12 @@
     <title>@yield('title', 'Tonoy - Home Page')</title>
 </head>
 <body>
-    @yield('content')
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
     </ul>
+@yield('content')
 </body>
 </html>
