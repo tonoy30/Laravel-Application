@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Project;
 class PagesController extends Controller{
 
     public function home() {
@@ -29,5 +29,12 @@ class PagesController extends Controller{
 
     public function contact(){
         return view('contact');
+    }
+
+    public function project(){
+        $projects = Project::all();
+        return view('projects.project', [
+            'projects_list' => $projects
+        ]);
     }
 }
